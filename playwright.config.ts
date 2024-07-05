@@ -2,14 +2,14 @@ import { defineConfig, devices } from '@playwright/test';
 
 export default defineConfig({
 use: { 
-	baseURL: 'http://www.dev.betsson.com:4000',
+	baseURL: '',
 },
 projects: [
     {
       name: 'safari',
       use: {
         ...devices['Desktop Safari'] 
-	},
+		},
     },
     {
       name: 'iphone14-l-safari',
