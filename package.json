@@ -1,0 +1,22 @@
+{
+  "name": "playwright-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "scripts": {  
+    "test:chrome": "npx playwright test --headed --browser=chromium",
+    "test:firefox": "npx playwright test --headed --browser=firefox",
+    "test:safari": "npx playwright test --headed --project=safari",
+	"test:iphone": "npx playwright test --headed --project=iphone14-safari",
+	"test:iphone-l": "npx playwright test --headed --project=iphone14-l-safari"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.45.1"
+  }
+}
